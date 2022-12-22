@@ -11,23 +11,21 @@ int main(void)
 
 	int b = '0';
 
-	for (a = '0'; a <= '9'; a++)/*to print ones*/
+	for (a = '0'; a <= '9'; a++)/*prints one digits*/
 	{
-		for (b = '0'; b <= '9'; b++)/* prints tens*/
+		for (b = '0'; b <= '9'; b++)/*prints tens*/
 		{
-			if (!((a == b) || (b > a)))/*eliminates repitition*/
+			if (!((a == b) || (b > a)))/*eliminate rep*/
 			{
 				putchar(a);
 				putchar(b);
+				if (!(a == '9' && b == '8'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-		{
-			putchar(',');
-			putchar(' ');
-
 		}
-
-		}
-
 	}
 	putchar('\n');
 
