@@ -11,9 +11,9 @@ int main(void)
 
 	int b = '0';
 
-	for (a = '0'; a <= '9'; a++)/*prints one digits*/
+	for (b = '0'; b <= '9'; b++)/*prints one digits*/
 	{
-		for (b = '0'; b <= '9'; b++)/*prints tens*/
+		for (a = '0'; a <= '9'; a++)/*prints tens*/
 		{
 			if (!((a == b) || (b > a)))/*eliminate rep*/
 			{
