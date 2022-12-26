@@ -4,6 +4,7 @@
  * print_sign - return 0 letter not lowercase, 1 letter lowercase
  *
  * @n : number to check
+ *
  * Return: 0 or 1
  *
  */
